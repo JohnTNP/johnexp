@@ -1,0 +1,13 @@
+{
+    "name": "JOHN EXP",
+    "short_name": "JOHN EXP",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "sizes": "512x512",
+            "type": "image/ico"
+        }
+    ],
+    "display": "standalone",
+    "theme_color": "rgb(255, 214, 214)"
+}
