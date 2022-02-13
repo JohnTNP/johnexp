@@ -38,7 +38,7 @@ loadData()
 }
 .card-page {
 	display: grid;
-	grid-template-columns: repeat(2, minmax(150px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 	justify-items: center;
 	margin: 0 2rem 0 2rem;
 }
