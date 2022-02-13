@@ -11,12 +11,13 @@ export let expDate:string
 
 <style>
 .card-container {
+    position: relative;
     margin-top: 2rem;
     background-color: white;
     background: linear-gradient(0deg, rgb(204, 246, 252) 0%, rgb(255, 214, 214) 100%);
     color: black;
-    height: 6rem;
-    width: 15rem;
+    height: 8rem;
+    width: 10rem;
     align-content: center;
     border-radius: 1rem;
     padding-left: 1rem;
@@ -25,6 +26,8 @@ export let expDate:string
 }
 .card-title {
     font-size: 1.5rem;
+}
+.card-exp {
 }
 
 </style>
