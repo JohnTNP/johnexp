@@ -45,8 +45,7 @@ loadData()
 .card-page {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(150px, 1fr));
-	gap: 50px;
 	justify-items: center;
-	margin: 0 2rem 0 2rem;
+	margin: 0 1rem 0 1rem;
 }
 </style>

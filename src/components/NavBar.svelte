@@ -111,7 +111,7 @@ const addCard = (itemName, date) => {
             <MdDelete />
         </div>
         {#if deleteActive}
-            <h2>{deleteSelects.length} items selected</h2>
+            <h2 style="font-size: 1rem;">{deleteSelects.length} items selected</h2>
             {#if !deleteConfirm}
                 <button class="delete-button" 
                     on:click={() => {
@@ -169,7 +169,7 @@ const addCard = (itemName, date) => {
 }
 
 .nav-delete-active {
-    height: 12rem;
+    height: 10rem;
     display: flex;
     flex-direction: column;
 }
@@ -206,7 +206,7 @@ const addCard = (itemName, date) => {
 
 .form-container {
     margin-top: 1rem;
-    font-size: 1.2rem; 
+    font-size: 1rem; 
     font-weight: bold;
 }
 .form-active {

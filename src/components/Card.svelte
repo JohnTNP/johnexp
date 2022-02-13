@@ -32,12 +32,12 @@ const onClickSelect = () => {
 
 <style>
 .card-container {
-    margin-top: 2rem;
+    margin-top: 1rem;
     background-color: white;
     background: linear-gradient(0deg, rgb(204, 246, 252) 0%, rgb(255, 214, 214) 100%);
     color: black;
-    height: 8em;
-    width: 10em;
+    height: 6rem;
+    width: 8rem;
     border-radius: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -48,10 +48,13 @@ const onClickSelect = () => {
     flex-direction: column;
 }
 .card-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 1rem;
 }
 .card-exp {
-    font-size: 1rem;
+    margin: 0;
+    font-size: 0.9em;
 }
 
 .card-selected {
