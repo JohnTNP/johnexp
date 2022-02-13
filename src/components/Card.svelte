@@ -15,16 +15,16 @@ export let expDate:string
     background-color: white;
     background: linear-gradient(0deg, rgb(204, 246, 252) 0%, rgb(255, 214, 214) 100%);
     color: black;
-    width: 9rem;
-    height: 6rem;
+    height: auto;
+    width: auto;
     align-content: center;
     border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     text-align: center;
 }
 .card-title {
     font-size: 1.5rem;
-}
-.card-exp {
 }
 
 </style>
