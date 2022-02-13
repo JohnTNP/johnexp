@@ -40,7 +40,6 @@ loadData()
 	display: grid;
 	grid-template-columns: repeat(2, minmax(150px, 1fr));
 	justify-items: center;
-	column-gap: 5rem;
 	margin: 0 2rem 0 2rem;
 }
 </style>
