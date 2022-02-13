@@ -111,7 +111,11 @@ const addCard = (itemName, date) => {
             <MdDelete />
         </div>
         {#if deleteActive}
-            <h2 style="font-size: 1rem;">{deleteSelects.length} items selected</h2>
+            {#if !deleteConfirm}
+                <h2 style="font-size: 1rem;">{deleteSelects.length} items selected</h2>
+            {:else}
+                <h2 style="font-size: 1rem;">Are you sure?</h2>
+            {/if}
             {#if !deleteConfirm}
                 <button class="delete-button" 
                     on:click={() => {
