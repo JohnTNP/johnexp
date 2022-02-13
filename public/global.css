@@ -1,5 +1,12 @@
+:root {
+	@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Quattrocento+Sans&family=Source+Sans+Pro&display=swap');
+}
+
 html, body {
 	background: rgb(27, 27, 27);
 	margin: 0;
 	font-family: monospace;
+	font-family: 'Oxygen', sans-serif;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 }

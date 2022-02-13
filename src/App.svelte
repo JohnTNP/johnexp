@@ -2,6 +2,7 @@
 
 import NavBar from "./components/NavBar.svelte"
 import Card from "./components/Card.svelte"
+import { navActiveStore } from "./store"
 
 let expDatasComp
 
@@ -10,7 +11,6 @@ const loadData = async () => {
 	const cards = await response.json()
 	const objects = await Object.entries(cards)
 
-	console.log(objects)
 	expDatasComp = objects 
 }
 loadData()
@@ -23,7 +23,10 @@ loadData()
 		<div class="card-page">
 			{#if expDatasComp}
 				{#each expDatasComp as card}
-					<Card cardTitle={card[1]["name"]} expDate={card[1]["expdate"]}/>
+					<Card 
+						cardTitle={card[1]["name"]} 
+						expDate={card[1]["expdate"]}
+						_id={card[1]["_id"]}/>
 				{/each}
 			{/if}
 			{#if !expDatasComp}
@@ -41,7 +44,8 @@ loadData()
 }
 .card-page {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-template-columns: repeat(2, minmax(150px, 1fr));
+	gap: 50px;
 	justify-items: center;
 	margin: 0 2rem 0 2rem;
 }
