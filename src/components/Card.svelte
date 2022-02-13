@@ -15,8 +15,8 @@ export let expDate:string
     background-color: white;
     background: linear-gradient(0deg, rgb(204, 246, 252) 0%, rgb(255, 214, 214) 100%);
     color: black;
-    height: auto;
-    width: auto;
+    height: 6rem;
+    width: 100%;
     align-content: center;
     border-radius: 1rem;
     padding-left: 1rem;
