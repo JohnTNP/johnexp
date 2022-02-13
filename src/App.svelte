@@ -6,7 +6,7 @@ import Card from "./components/Card.svelte"
 let expDatasComp
 
 const loadData = async () => {
-	const response = await fetch('https://ExpDateServerTNP.johntnp.repl.co/getData')	
+	const response = await fetch('https://john-exp-api.herokuapp.com/getData')	
 	const cards = await response.json()
 	const objects = await Object.entries(cards)
 
@@ -25,6 +25,9 @@ loadData()
 				{#each expDatasComp as card}
 					<Card cardTitle={card[1]["name"]} expDate={card[1]["expdate"]}/>
 				{/each}
+			{/if}
+			{#if !expDatasComp}
+				<h1 style="color: white; margin-top: 2rem">Loading...</h1>
 			{/if}
 		</div>
 	</div>

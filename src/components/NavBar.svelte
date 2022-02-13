@@ -10,6 +10,7 @@ navActiveStore.subscribe(
     }
 )
 
+
 let itemName, date
 
 const addCard = (itemName, date) => {
@@ -21,7 +22,7 @@ const addCard = (itemName, date) => {
     console.log(typeof(data));
     
 
-    fetch('https://ExpDateServerTNP.johntnp.repl.co/insertData',
+    fetch('https://john-exp-api.herokuapp.com/insertData',
     {
         method: "POST",
         headers: {
