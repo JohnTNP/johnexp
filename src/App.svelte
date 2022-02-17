@@ -2,12 +2,13 @@
 
 import NavBar from "./components/NavBar.svelte"
 import Card from "./components/Card.svelte"
+import { URL } from "./config"
 import { navActiveStore } from "./store"
 
 let expDatasComp
 
 const loadData = async () => {
-	const response = await fetch('https://john-exp-api.herokuapp.com/getData')	
+	const response = await fetch( URL + '/getData')	
 	const cards = await response.json()
 	const objects = await Object.entries(cards)
 
