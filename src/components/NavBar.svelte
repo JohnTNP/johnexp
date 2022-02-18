@@ -3,7 +3,7 @@ import { navActiveStore, deleteActiveStore, deleteSelected } from '../store'
 import MdAddCircleOutline from 'svelte-icons/md/MdAddCircleOutline.svelte'
 import MdRemoveCircleOutline from 'svelte-icons/md/MdRemoveCircleOutline.svelte'
 import MdDelete from 'svelte-icons/md/MdDelete.svelte'
-import { URL } from '../config'
+import { removeURL, createURL } from '../config'
 
 // Logic
 let navActive:boolean
@@ -32,7 +32,7 @@ const onSubmitDelete = () => {
             const payload = { _id: deleteSelects[i] }     
             const data = JSON.stringify(payload)
 
-            fetch( URL + '/deleteData' ,
+            fetch( removeURL ,
             {
                 method: "POST",
                 headers: {
@@ -59,7 +59,7 @@ const addCard = (itemName, date) => {
     }
     const data = JSON.stringify(payload)
 
-    fetch( URL + '/insertData' ,
+    fetch( createURL ,
     {
         method: "POST",
         headers: {
